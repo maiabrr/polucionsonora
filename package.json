@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sariavaal/POLUCION_SONORA_MVC.git"
+    "url": "https://github.com/maiabrr/polucionsonora.git"
   },
   "keywords": [
     "MVC",
@@ -27,12 +27,12 @@
     "MySQL",
     "sequelize"
   ],
-  "author": "Sara Armoa",
+  "author": "Maia Belén Ramirez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sariavaal/POLUCION_SONORA_MVC/issues"
+    "url": "https://github.com/maiabrr/polucionsonora/issues"
   },
-  "homepage": "https://github.com/sariavaal/POLUCION_SONORA_MVC#readme",
+  "homepage": "https://github.com/maiabrr/polucionsonora#readme",
   "dependencies": {
     "2": "^3.0.0",
     "@types/sequelize": "^4.28.19",

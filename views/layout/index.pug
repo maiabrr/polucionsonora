@@ -1,0 +1,23 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Alerta Ruido | #{pagina}
+        block styles
+        link(rel="stylesheet", href="/css/app.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css")
+       
+
+    body.min-h-screen.bg-gray-200
+        if barra
+            include includes/header-admin
+        if navbar 
+            include includes/adminnavbar
+        main(class="mx-auto container mt-5 px-2")
+        block contenido
+        if (volverAlInicio)
+            div(class="flex flex-col items-center justify-center mt-10")
+                a(href="/reportes" class="bg-green-600 py-2 px-10 rounded-lg text-white font-bold uppercase") Volver al inicio
+
+        block scripts 

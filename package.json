@@ -1,0 +1,68 @@
+{
+  "name": "polucion_sonora_mvc",
+  "version": "1.0.0",
+  "description": "Sistema para obtener el titulo de licenciatura en analisis de sistema informaticos de la unae.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "css": "postcss public/css/tailwind.css -o public/css/app.css --watch",
+    "js": "webpack --watch",
+    "dev": "concurrently \"npm run css\" \"npm run js\"",
+    "db:importar": "node ./seeders/usuarioSeed.js -i",
+    "db:eliminar": "node ./seeders/usuarioSeed.js -e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sariavaal/POLUCION_SONORA_MVC.git"
+  },
+  "keywords": [
+    "MVC",
+    "pug",
+    "tailwind",
+    "css",
+    "node",
+    "js",
+    "MySQL",
+    "sequelize"
+  ],
+  "author": "Sara Armoa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sariavaal/POLUCION_SONORA_MVC/issues"
+  },
+  "homepage": "https://github.com/sariavaal/POLUCION_SONORA_MVC#readme",
+  "dependencies": {
+    "2": "^3.0.0",
+    "@types/sequelize": "^4.28.19",
+    "bcrypt": "^5.1.1",
+    "busboy": "^1.6.0",
+    "cookie-parser": "^1.4.6",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.3.1",
+    "dropzone": "^5.9.3",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.6.3",
+    "nodemailer": "^6.9.7",
+    "pug": "^3.0.2",
+    "sequelize": "^6.35.1",
+    "sequelize-typescript": "^2.1.5",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "daisyui": "^4.4.19",
+    "nodemon": "^3.0.1",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.5",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
